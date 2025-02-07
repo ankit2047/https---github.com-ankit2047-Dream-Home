@@ -1,0 +1,250 @@
+/* Default styles */
+.homeContainer {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.background-img {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    background: url('C:\Users\Ankit\Desktop\Task\frontend\src\assets\background Image.jpg');
+    z-index: -1;
+    object-fit: cover; 
+}
+
+.first {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 80px;
+}
+
+.first h1 {
+    color:red;
+}
+
+.first p {
+    background: red;
+    border-radius: 40px;
+    color: white;
+    padding: 3px 20px;
+    font-size: 20px;
+}
+
+.second {
+    display: flex;
+    gap: 20px;
+}
+
+.right p,
+.right h1 {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.right p {
+    font-weight: 500;
+}
+
+.right h1 {
+    font-size: 50px;
+    color: red;
+}
+
+.form-container {
+    width: 450px;
+    padding: 30px 30px;
+    margin: 15px 70px;
+    background: white;
+    border: 1px solid black;
+    position: relative;
+    text-align: center;
+}
+
+.form-header {
+    width: 70%;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: red;
+    color: white;
+    padding: 8px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.data {
+    text-align: left;
+    margin: 5px 0;
+}
+
+label {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid black;
+}
+
+.visitSchedule {
+    width: 99%;
+    padding: 8px;
+    border: 1px solid black;
+    background: rgb(216, 215, 215);
+}
+
+textarea {
+    min-height: 40px;
+}
+
+.submit-btn {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.submit-btn button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 12px 175px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+.submit-btn button:hover {
+    background: darkred;
+}
+
+.homeContainer img {
+    width: 100%;
+    max-height: 55%;
+}
+
+/* Media Queries */
+
+/* For Small Devices (Mobile Phones) */
+@media screen and (max-width: 768px) {
+    .homeContainer {
+        height: auto; /* Allow home container to shrink vertically */
+    }
+
+    .first {
+        flex-direction: column; /* Stack elements vertically */
+        margin: 10px 20px; /* Reduce margin for smaller screens */
+        align-items: center; /* Center-align the content */
+    }
+
+    .first h1 {
+        font-size: 24px; /* Reduce font size */
+    }
+
+    .first p {
+        font-size: 16px; /* Reduce font size */
+        margin-top: 10px; /* Add space between heading and paragraph */
+    }
+
+    .second {
+        flex-direction: column; /* Stack the content vertically */
+        align-items: center; /* Center-align the content */
+    }
+
+    .right h1 {
+        font-size: 32px; /* Reduce font size */
+    }
+
+    .form-container {
+        width: 100%; /* Form takes full width */
+        margin: 20px 15px; /* Adjust margins */
+        padding: 20px; /* Reduce padding */
+    }
+
+    .form-header {
+        width: 80%; /* Adjust header width */
+        padding: 10px 20px;
+        font-size: 16px; /* Reduce font size */
+    }
+
+    .submit-btn button {
+        padding: 12px 100px; /* Adjust button padding */
+        font-size: 14px; /* Reduce font size */
+    }
+
+    .background-img {
+        bottom: 30%; /* Adjust background position */
+    }
+}
+
+/* For Tablets (Medium Devices) */
+@media screen and (max-width: 1024px) {
+    .homeContainer {
+        height: auto; /* Allow container to adjust for tablet screens */
+    }
+
+    .first {
+        margin: 10px 30px; /* Adjust margins for tablets */
+    }
+
+    .form-container {
+        width: 70%; /* Form takes more width */
+        margin: 20px 30px;
+    }
+
+    .form-header {
+        width: 75%; /* Adjust header width */
+        padding: 10px 20px;
+        font-size: 17px; /* Adjust font size */
+    }
+
+    .right h1 {
+        font-size: 35px; /* Adjust font size */
+    }
+
+    .submit-btn button {
+        padding: 12px 150px; /* Adjust button padding */
+    }
+
+    .background-img {
+        top: 35%; /* Adjust background position */
+    }
+}
+
+/* For Large Screens (Desktop) */
+@media screen and (min-width: 1200px) {
+    .first {
+        margin: 5px 80px; /* Keep original margin for large screens */
+    }
+
+    .form-container {
+        width: 450px; /* Keep form width unchanged */
+        margin: 15px 70px;
+    }
+
+    .form-header {
+        width: 70%;
+        font-size: 18px;
+    }
+
+    .right h1 {
+        font-size: 50px; /* Keep original font size */
+    }
+
+    .submit-btn button {
+        padding: 12px 175px; /* Keep original button size */
+    }
+
+    .background-img {
+        top: 40%; /* Keep original background position */
+    }
+}

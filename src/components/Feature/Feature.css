@@ -1,0 +1,147 @@
+.featurecontainer {
+    margin: 0px 40px;
+    margin-bottom: 40px;
+}
+
+.para {
+    color: red;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.fratureWrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin: 20px 0px;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.feature-card {
+    padding: 3px;
+    max-width: max-content;
+    padding: 0 5px;
+    margin-right: 5px;
+}
+
+.fratureWrapper img {
+    width: 250px;
+    margin: 5px 0px;
+}
+
+.feature-card p {
+    margin: 0;
+}
+
+.feature-card h4 {
+    margin: 0;
+}
+
+button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin: 5px 0px;
+    font-size: 15px;
+}
+
+/* Media Queries */
+
+/* For Small Devices (Mobile Phones) */
+@media screen and (max-width: 768px) {
+    .featurecontainer {
+        margin: 0px 20px; /* Reduce margin on mobile */
+    }
+
+    .para {
+        font-size: 16px; /* Adjust font size for mobile */
+    }
+
+    .fratureWrapper {
+        flex-direction: column; /* Stack items vertically */
+        gap: 20px; /* Add space between items */
+        justify-content: center;
+    }
+
+    .feature-card {
+        max-width: 100%; /* Ensure cards take full width */
+        padding: 0 0; /* Remove padding for mobile */
+        margin-right: 0;
+        
+    }
+
+    .fratureWrapper img {
+        width: 100%; /* Ensure images scale to fit mobile screen */
+        height: auto;
+    }
+
+    button {
+        font-size: 14px; /* Make button text smaller for mobile */
+        padding: 8px 15px; /* Adjust button size */
+    }
+}
+
+/* For Tablets (Medium Devices) */
+@media screen and (max-width: 1024px) {
+    .featurecontainer {
+        margin: 0px 30px; /* Adjust margin for tablet devices */
+    }
+
+    .para {
+        font-size: 18px; /* Slightly smaller font size on tablet */
+    }
+
+    .fratureWrapper {
+        flex-direction: row; /* Keep items side by side */
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .feature-card {
+        max-width: 40%; /* Allow two cards per row */
+        padding: 0 5px;
+        margin-right: 15px;
+    }
+
+    .fratureWrapper img {
+        width: 100%; /* Ensure images scale */
+    }
+
+    button {
+        font-size: 15px; /* Standardize button size for tablets */
+        padding: 10px 20px;
+    }
+}
+
+/* For Large Screens (Desktop) */
+@media screen and (min-width: 1200px) {
+    .featurecontainer {
+        margin: 0px 40px; /* Keep margin large for desktop */
+    }
+
+    .para {
+        font-size: 20px; /* Default font size for larger screens */
+    }
+
+    .fratureWrapper {
+        flex-direction: row; /* Keep items side by side */
+        gap: 40px; /* Larger gap between items */
+    }
+
+    .feature-card {
+        max-width: max-content; /* Keep original size on large screens */
+        padding: 0 5px;
+    }
+
+    .fratureWrapper img {
+        width: 250px; /* Fixed image size for desktop */
+    }
+
+    button {
+        font-size: 15px; /* Standardize button size for desktop */
+        padding: 12px 25px; /* Slightly larger button */
+    }
+}
